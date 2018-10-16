@@ -36,11 +36,7 @@ has 'language' => (
 );
 
 # This is ignored for Perl plug-ins.
-has 'type' => (
-    is => 'rw',
-    lazy => 1,
-    default => sub { '' },
-);
+#has 'type' => ()
 
 has 'name' => (
     is          => 'rw',
@@ -218,7 +214,6 @@ sub gather_files {
             # Qgoda specific stuff.
             my $qgoda = $package->{qgoda} = {};
             $qgoda->{language} = $self->language;
-            $qgoda->{type} = $self->type if length $self->type;
 
             return JSON->new->utf8(1)->pretty(1)->encode($package)
         }
@@ -260,7 +255,6 @@ Dist::Zilla::Plugin::Qgoda - Write a package.json for Qgoda plug-ins.
 In your F<dist.ini>:
 
     [Qgoda]
-    type            = 'TT2::Filter' ; the plug-in type
     language        = 'Perl'
 
     name            = my-plug-in ; default: lowercased distribution name
