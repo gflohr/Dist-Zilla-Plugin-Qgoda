@@ -14,7 +14,7 @@ my %module_build_args = (
     "ExtUtils::MakeMaker" => 0,
     "Module::Build" => "0.28"
   },
-  "dist_abstract" => "Write a package.json for L<http://www.qgoda.net/|Qgoda>",
+  "dist_abstract" => "Write a package.json for Qgoda plug-ins.",
   "dist_author" => [
     "Guido Flohr <guido.flohr\@cantanea.com>"
   ],

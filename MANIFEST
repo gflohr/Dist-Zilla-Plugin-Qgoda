@@ -6,8 +6,11 @@ MANIFEST
 META.json
 META.yml
 Makefile.PL
+README.md
 README.pod
+dist.ini
 lib/Dist/Zilla/Plugin/Qgoda.pm
+perlcritic.rc
 t/author-critic.t
 t/author-pod-syntax.t
 t/release-cpan-changes.t

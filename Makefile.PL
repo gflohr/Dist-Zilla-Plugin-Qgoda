@@ -7,7 +7,7 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Write a package.json for L<http://www.qgoda.net/|Qgoda>",
+  "ABSTRACT" => "Write a package.json for Qgoda plug-ins.",
   "AUTHOR" => "Guido Flohr <guido.flohr\@cantanea.com>",
   "BUILD_REQUIRES" => {
     "Module::Build" => "0.28"
