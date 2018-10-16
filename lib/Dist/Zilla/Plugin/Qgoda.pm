@@ -235,12 +235,6 @@ sub mvp_multivalue_args {
     qw(contributor dependency devDependency engine bin keyword)
 }
 
-sub VERSION {
-    no strict 'vars';
-
-    return $VERSION;
-}
-
 no Moose;
 __PACKAGE__->meta->make_immutable(inline_constructor => 0);
 
